@@ -176,7 +176,7 @@ export default function App() {
                  className="flex flex-row justify-center items-center gap-3 mb-8"
               >
                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden shrink-0 border-2 border-brown bg-white shadow-sm">
-                   <img src="../public/vectorcoffe.png" alt="Sowon Logo" className="w-full h-full object-cover scale-110" />
+                   <img src="/vectorcoffe.png" alt="Sowon Logo" className="w-full h-full object-cover scale-110" />
                  </div>
                  <div className="flex flex-col items-start leading-none">
                    <span className="font-serif font-bold text-2xl text-brown">Sowon</span>
@@ -192,7 +192,7 @@ export default function App() {
               >
               {/* Logo at top of card */}
               <div className="mb-6 w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border-2 border-brown bg-white shadow-sm">
-                <img src="../public/Coffe.png" alt="Sowon Logo" className="w-full h-full object-cover scale-110" />
+                <img src="/Coffe.png" alt="Sowon Logo" className="w-full h-full object-cover scale-110" />
               </div>
 
               <motion.div
