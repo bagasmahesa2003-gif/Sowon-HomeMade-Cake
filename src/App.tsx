@@ -35,7 +35,7 @@ const PRODUCTS = [
   {
     id: 'chs',
     name: 'Basque Cheesecake',
-    price: 40000,
+    price: 32000,
     desc: 'Cheesecake Basque gaya New York yang creamy, dengan bagian atas yang terkaramelisasi.',
     image: 'https://images.unsplash.com/photo-1524351199678-941a58a3df50?auto=format&fit=crop&q=80&w=800'
   },
