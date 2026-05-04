@@ -9,7 +9,7 @@ const PRODUCTS = [
     name: 'Choco Truffle',
     price: 35000,
     desc: 'Kue cokelat hitam yang kaya rasa, dengan lapisan ganache yang lembut dan halus.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/a/a9/200209_%EC%96%91%EC%B2%9C_%ED%8C%AC%EC%82%AC%EC%9D%B8%ED%9A%8C.jpg'
+    image: 'https://awsimages.detik.net.id/customthumb/2011/12/20/900/BSngemilRampingCTT.jpg?w=700&q=90'
   },
   {
     id: 'van',
