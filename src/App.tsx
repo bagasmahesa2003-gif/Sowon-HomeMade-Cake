@@ -9,7 +9,7 @@ const PRODUCTS = [
     name: 'Choco Truffle',
     price: 35000,
     desc: 'Kue cokelat hitam yang kaya rasa, dengan lapisan ganache yang lembut dan halus.',
-    image: 'https://www.google.com/imgres?q=gfriend&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fa%2Fa9%2F200209_%25EC%2596%2591%25EC%25B2%259C_%25ED%258C%25AC%25EC%2582%25AC%25EC%259D%25B8%25ED%259A%258C.jpg&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGFriend&docid=0nguPF2w5p9GaM&tbnid=fvi9LWMWt5MWUM&vet=12ahUKEwiDqOv-hZ-UAxWQjGMGHb3vMtkQnPAOegQIFxAB..i&w=1388&h=925&hcb=2&ved=2ahUKEwiDqOv-hZ-UAxWQjGMGHb3vMtkQnPAOegQIFxAB'
+    image: 'https://upload.wikimedia.org/wikipedia/commons/a/a9/200209_%EC%96%91%EC%B2%9C_%ED%8C%AC%EC%82%AC%EC%9D%B8%ED%9A%8C.jpg'
   },
   {
     id: 'van',
