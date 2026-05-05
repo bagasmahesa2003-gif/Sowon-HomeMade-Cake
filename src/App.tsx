@@ -6,10 +6,10 @@ import ReactPlayer from 'react-player';
 const PRODUCTS = [
   {
     id: 'choc',
-    name: 'Choco Truffle',
+    name: 'Chocolate Truffle',
     price: 35000,
     desc: 'Kue cokelat hitam yang kaya rasa, dengan lapisan ganache yang lembut dan halus.',
-    image: 'https://awsimages.detik.net.id/customthumb/2011/12/20/900/BSngemilRampingCTT.jpg?w=700&q=90'
+    image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'van',
@@ -237,10 +237,10 @@ export default function App() {
                     <span className="font-sans text-[11px] sm:text-[13px] text-brown/80 leading-tight">Siap delivery ke seluruh kota</span>
                   </div>
                   <div className="flex flex-col items-center text-center">
-                    h-12 rounded-full bg-[#f5efe9] flex items-center justify-center mb-2 sm:mb-3 text-brown">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#f5efe9] flex items-center justify-center mb-2 sm:mb-3 text-brown">
                       <CakeSlice className="w-5 h-5 sm:w-6 sm:h-6" />
                     </div>
-                     <span className="font-sans text-[11px] sm:text-[13px] text-brown/80 leading-tight">Fresh dibuat setiap hari</span>
+                    <span className="font-sans text-[11px] sm:text-[13px] text-brown/80 leading-tight">Fresh dibuat setiap hari</span>
                   </div>
                 </div>
               </motion.div>
