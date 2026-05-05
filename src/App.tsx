@@ -188,7 +188,7 @@ export default function App() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="w-full max-w-2xl bg-[#FCFAF8] p-6 sm:p-10 md:p-12 rounded-[32px] shadow-[0_8px_40px_rgba(62,39,35,0.15)] flex flex-col items-center border border-white"
+                className="w-full max-w-2xl bg-[#FCFAF8] p-5 sm:p-10 md:p-12 rounded-[24px] sm:rounded-[32px] shadow-[0_8px_40px_rgba(62,39,35,0.15)] flex flex-col items-center border border-white"
               >
               {/* Logo at top of card */}
               <div className="mb-6 w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border-2 border-brown bg-white shadow-sm">
@@ -206,9 +206,9 @@ export default function App() {
                 <Sparkles className="absolute top-10 right-6 sm:right-16 md:right-20 w-5 h-5 text-brown/40" />
 
                 <h1 className="leading-[1.1] mb-[24px] text-brown font-serif font-bold text-center w-full">
-                  <span className="block text-[36px] sm:text-[44px] md:text-[52px]">Selamat Datang</span>
-                  <span className="block text-[28px] sm:text-[32px] md:text-[36px] my-2 text-[#6c804b] font-medium">Di</span>
-                  <span className="block text-[32px] sm:text-[40px] md:text-[46px] whitespace-nowrap">Sowon Homemade Cake</span>
+                  <span className="block text-[28px] sm:text-[44px] md:text-[52px]">Selamat Datang</span>
+                  <span className="block text-[22px] sm:text-[32px] md:text-[36px] my-2 text-[#6c804b] font-medium">Di</span>
+                  <span className="block text-[26px] sm:text-[40px] md:text-[46px]">Sowon Homemade Cake</span>
                 </h1>
                 
                 {/* Heart Divider */}
@@ -225,22 +225,22 @@ export default function App() {
                 {/* Features */}
                 <div className="grid grid-cols-3 gap-3 sm:gap-6 mb-8 w-full max-w-lg mx-auto">
                   <div className="flex flex-col items-center text-center">
-                    <div className="w-12 h-12 rounded-full bg-[#f5efe9] flex items-center justify-center mb-3 text-brown">
-                      <Star className="w-6 h-6" />
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#f5efe9] flex items-center justify-center mb-2 sm:mb-3 text-brown">
+                      <Star className="w-5 h-5 sm:w-6 sm:h-6" />
                     </div>
-                    <span className="font-sans text-[12px] sm:text-[13px] text-brown/80 leading-tight">Favorit banyak pelanggan</span>
+                    <span className="font-sans text-[11px] sm:text-[13px] text-brown/80 leading-tight">Favorit banyak pelanggan</span>
                   </div>
                   <div className="flex flex-col items-center text-center">
-                    <div className="w-12 h-12 rounded-full bg-[#f5efe9] flex items-center justify-center mb-3 text-brown">
-                      <Truck className="w-6 h-6" />
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#f5efe9] flex items-center justify-center mb-2 sm:mb-3 text-brown">
+                      <Truck className="w-5 h-5 sm:w-6 sm:h-6" />
                     </div>
-                    <span className="font-sans text-[12px] sm:text-[13px] text-brown/80 leading-tight">Siap delivery ke seluruh kota</span>
+                    <span className="font-sans text-[11px] sm:text-[13px] text-brown/80 leading-tight">Siap delivery ke seluruh kota</span>
                   </div>
                   <div className="flex flex-col items-center text-center">
-                    <div className="w-12 h-12 rounded-full bg-[#f5efe9] flex items-center justify-center mb-3 text-brown">
-                      <CakeSlice className="w-6 h-6" />
+                    h-12 rounded-full bg-[#f5efe9] flex items-center justify-center mb-2 sm:mb-3 text-brown">
+                      <CakeSlice className="w-5 h-5 sm:w-6 sm:h-6" />
                     </div>
-                    <span className="font-sans text-[12px] sm:text-[13px] text-brown/80 leading-tight">Fresh dibuat setiap hari</span>
+                     <span className="font-sans text-[11px] sm:text-[13px] text-brown/80 leading-tight">Fresh dibuat setiap hari</span>
                   </div>
                 </div>
               </motion.div>
@@ -281,9 +281,9 @@ export default function App() {
             }}
           >
 
-      <aside className="bg-white border-b lg:border-b-0 lg:border-r border-brown/10 p-[40px_30px] flex flex-col justify-between overflow-y-auto shrink-0 h-auto lg:h-full gap-[30px] z-10 shadow-sm lg:shadow-none">
+      <aside className="bg-white border-b lg:border-b-0 lg:border-r border-brown/10 p-[20px] lg:p-[40px_30px] flex flex-col justify-between overflow-y-auto shrink-0 h-auto lg:h-full gap-[20px] lg:gap-[30px] z-10 shadow-sm lg:shadow-none">
         <div className="hero">
-          <h1 className="text-[32px] leading-[1.2] mb-[15px] text-brown font-serif">Sowon HomeMade Cake</h1>
+          <h1 className="text-[28px] lg:text-[32px] leading-[1.2] mb-[10px] lg:mb-[15px] text-brown font-serif">Sowon HomeMade Cake</h1>
           <p className="font-sans text-[14px] leading-[1.6] text-light-brown mb-[30px]">
             Kue dengan berbagai rasa favorit yang dibuat dari bahan berkualitas, cocok banget buat nemenin setiap momen kamu, dari santai sampai yang spesial
           </p>
@@ -309,7 +309,7 @@ export default function App() {
         </div>
       </aside>
 
-      <main className="p-[30px] overflow-y-auto h-full w-full">
+      <main className="p-[20px] lg:p-[30px] overflow-y-auto h-full w-full">
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-[20px] pb-24 lg:pb-0">
           {PRODUCTS.map((product) => {
             const qty = cart[product.id] || 0;
