@@ -289,7 +289,7 @@ export default function App() {
           </p>
         </div>
 
-        <div className="cart-section border-t-2 border-cream pt-[30px]">
+        <div className="hidden lg:block cart-section border-t-2 border-cream pt-[30px]">
           <div className="cart-stats font-sans mb-[20px]">
             <div className="flex justify-between mb-[10px] text-[14px]">
               <span>Items Ordered</span>
@@ -309,8 +309,8 @@ export default function App() {
         </div>
       </aside>
 
-      <main className="p-[20px] lg:p-[30px] overflow-y-auto h-full w-full">
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-[20px] pb-24 lg:pb-0">
+      <main className="p-[20px] lg:p-[30px] overflow-y-auto h-full w-full relative">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-[20px] pb-[80px] lg:pb-0">
           {PRODUCTS.map((product) => {
             const qty = cart[product.id] || 0;
             return (
@@ -362,6 +362,29 @@ export default function App() {
             );
           })}
         </div>
+
+        {/* Mobile Floating Cart */}
+        <AnimatePresence>
+          {totalItems > 0 && (
+            <motion.div 
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 50 }}
+              className="lg:hidden fixed bottom-[20px] left-[20px] right-[20px] bg-white rounded-[16px] shadow-[0_8px_30px_rgba(62,39,35,0.15)] p-[16px] border border-brown/10 z-50 flex items-center justify-between"
+            >
+              <div className="flex flex-col">
+                <span className="text-[12px] text-light-brown font-sans">{totalItems} Items</span>
+                <span className="text-[16px] font-bold text-brown font-serif">Rp {totalPrice.toLocaleString('id-ID')}</span>
+              </div>
+              <button 
+                onClick={handleCheckout}
+                className="px-[20px] py-[12px] bg-leafy-green text-white border-none rounded-[8px] text-[13px] font-bold cursor-pointer font-sans uppercase tracking-[1px] hover:bg-leafy-green/90 transition-all duration-300 flex items-center gap-2"
+              >
+                Order <ShoppingBag className="w-4 h-4" />
+              </button>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </main>
           </motion.div>
         )}
