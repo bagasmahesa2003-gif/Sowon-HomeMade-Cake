@@ -309,10 +309,12 @@ export default function App() {
         </div>
       </aside>
 
-      <main 
-        className="p-[20px] lg:p-[30px] overflow-y-auto h-full w-full relative bg-cover bg-center bg-no-repeat bg-fixed"
-        style={{ backgroundImage: 'url("/background.png")' }}
-      >
+      <div className="relative h-full w-full flex-1 overflow-hidden bg-[#FCFAF8]">
+        <div 
+          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat blur-[6px] opacity-60 scale-[1.05]"
+          style={{ backgroundImage: 'url("/background.png")' }}
+        />
+        <main className="absolute inset-0 p-[20px] lg:p-[30px] overflow-y-auto z-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-[20px] pb-[80px] lg:pb-0">
           {PRODUCTS.map((product) => {
             const qty = cart[product.id] || 0;
@@ -389,6 +391,7 @@ export default function App() {
           )}
         </AnimatePresence>
       </main>
+      </div>
           </motion.div>
         )}
       </AnimatePresence>
