@@ -192,7 +192,7 @@ export default function App() {
               >
               {/* Logo at top of card */}
               <div className="mb-6 w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border-2 border-brown bg-white shadow-sm">
-                <img src="/logosowon.png" alt="Sowon Logo" className="w-full h-full object-cover scale-110" />
+                <img src="/cupcake.png" alt="Sowon Logo" className="w-full h-full object-cover scale-110" />
               </div>
 
               <motion.div
